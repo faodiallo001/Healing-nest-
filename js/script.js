@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("componentsLoaded", () => {
   initializeHeader();
   initializeRevealAnimations();
 });
