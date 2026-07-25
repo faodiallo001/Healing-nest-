@@ -3391,10 +3391,25 @@ FEATURES GRID
 =========================== */
 
 .founder-features{
+
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-    margin-top:50px;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:0;
+
+    margin-top:70px;
+
+    background:#fff;
+
+    border:1px solid rgba(18,63,51,.08);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.06);
+
 }
 
 /* =========================================================
