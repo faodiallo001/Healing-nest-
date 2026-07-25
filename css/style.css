@@ -3228,3 +3228,495 @@ transform:scale(1.08);
 }
 
 }
+
+/* =========================================================
+   MEET THE FOUNDER
+========================================================= */
+
+.founder-section{
+    padding:120px 0;
+    background:#f8f6f2;
+    position:relative;
+    overflow:hidden;
+}
+
+.founder-section::before{
+    content:"";
+    position:absolute;
+    top:-220px;
+    right:-220px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(18,63,51,.05);
+}
+
+.founder-grid{
+    display:grid;
+    grid-template-columns:520px 1fr;
+    gap:90px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+/* ===========================
+IMAGE
+=========================== */
+
+.founder-image{
+    position:relative;
+}
+
+.founder-image-wrapper{
+    position:relative;
+    overflow:hidden;
+    border-radius:32px;
+    box-shadow:0 35px 80px rgba(0,0,0,.12);
+}
+
+.founder-image-wrapper img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+    transition:transform .7s ease;
+}
+
+.founder-image:hover img{
+    transform:scale(1.05);
+}
+
+/* decorative border */
+
+.founder-image-wrapper::before{
+    content:"";
+    position:absolute;
+    inset:18px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:22px;
+    z-index:2;
+    pointer-events:none;
+}
+
+/* ===========================
+BADGE
+=========================== */
+
+.founder-badge{
+    position:absolute;
+    bottom:35px;
+    left:35px;
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    padding:20px 24px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(16px);
+
+    border-radius:22px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    max-width:360px;
+}
+
+.badge-icon{
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    flex-shrink:0;
+
+    font-size:1.3rem;
+}
+
+.founder-badge strong{
+    display:block;
+    color:var(--color-heading);
+    margin-bottom:4px;
+    font-size:1rem;
+}
+
+.founder-badge span{
+    display:block;
+    color:var(--color-muted);
+    font-size:.82rem;
+    line-height:1.6;
+}
+
+/* ===========================
+CONTENT
+=========================== */
+
+.founder-content .section-eyebrow{
+    margin-bottom:18px;
+}
+
+.founder-content h2{
+    max-width:650px;
+    margin-bottom:28px;
+}
+
+.section-intro{
+    font-size:1.1rem;
+    line-height:1.9;
+    margin-bottom:24px;
+}
+
+.founder-content p{
+    color:var(--color-muted);
+    line-height:1.9;
+    max-width:700px;
+}
+
+.founder-content .btn{
+    margin-top:45px;
+}
+
+/* ===========================
+FEATURES GRID
+=========================== */
+
+.founder-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+    margin-top:50px;
+}
+
+/* =========================================================
+   FOUNDER FEATURES
+========================================================= */
+
+.founder-feature{
+
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+
+    padding:28px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    border:1px solid rgba(18,63,51,.08);
+
+    box-shadow:0 15px 45px rgba(0,0,0,.05);
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+}
+
+.founder-feature:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 70px rgba(0,0,0,.10);
+
+    border-color:rgba(18,63,51,.16);
+
+}
+
+.founder-feature-icon{
+
+    width:64px;
+    height:64px;
+
+    min-width:64px;
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--color-primary),
+        #1d5d4d
+    );
+
+    color:#fff;
+
+    transition:
+    transform .35s ease,
+    background .35s ease;
+
+}
+
+.founder-feature:hover
+.founder-feature-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+.founder-feature-icon svg{
+
+    width:30px;
+    height:30px;
+
+}
+
+.founder-feature h3{
+
+    margin-bottom:8px;
+
+    font-size:1.2rem;
+
+    color:var(--color-heading);
+
+}
+
+.founder-feature p{
+
+    margin:0;
+
+    color:var(--color-muted);
+
+    line-height:1.75;
+
+    font-size:.96rem;
+
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.founder-content .btn{
+
+    margin-top:55px;
+
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+.founder-image{
+
+    animation:founderImageFloat 8s ease-in-out infinite;
+
+}
+
+@keyframes founderImageFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.founder-badge{
+
+animation:badgeFloat 6s ease-in-out infinite;
+
+animation-delay:1.5s;
+
+}
+
+@keyframes badgeFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-6px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1200px){
+
+.founder-grid{
+
+grid-template-columns:1fr;
+
+gap:70px;
+
+}
+
+.founder-image{
+
+max-width:620px;
+
+margin:auto;
+
+}
+
+.founder-content{
+
+text-align:center;
+
+}
+
+.founder-content h2,
+.founder-content p{
+
+max-width:100%;
+
+}
+
+.founder-features{
+
+margin-top:45px;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.founder-features{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.founder-section{
+
+padding:90px 0;
+
+}
+
+.founder-image{
+
+max-width:100%;
+
+}
+
+.founder-badge{
+
+position:relative;
+
+left:auto;
+bottom:auto;
+
+margin-top:-35px;
+margin-left:auto;
+margin-right:auto;
+
+max-width:92%;
+
+}
+
+.founder-content h2{
+
+font-size:2.4rem;
+
+}
+
+.founder-feature{
+
+padding:24px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.founder-section{
+
+padding:70px 0;
+
+}
+
+.founder-image-wrapper{
+
+border-radius:24px;
+
+}
+
+.founder-badge{
+
+padding:18px;
+
+gap:14px;
+
+}
+
+.badge-icon{
+
+width:52px;
+height:52px;
+
+font-size:1.1rem;
+
+}
+
+.founder-content h2{
+
+font-size:2rem;
+
+}
+
+.founder-feature{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.founder-feature-icon{
+
+width:58px;
+height:58px;
+
+min-width:58px;
+
+}
+
+}
