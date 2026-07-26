@@ -4717,3 +4717,85 @@ RESPONSIVE
 }
 
 }
+
+/* ==========================================
+   TESTIMONIAL SLIDER
+========================================== */
+
+.testimonial-slider{
+
+    position:relative;
+
+    min-height:320px;
+
+}
+
+.testimonial-slide{
+
+    display:none;
+
+    animation:testimonialFade .6s ease;
+
+}
+
+.testimonial-slide.active{
+
+    display:block;
+
+}
+
+@keyframes testimonialFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.testimonial-dots{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:35px;
+
+}
+
+.testimonial-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.testimonial-dot.active{
+
+    width:36px;
+
+    border-radius:999px;
+
+    background:var(--color-accent);
+
+}
