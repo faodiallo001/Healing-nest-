@@ -2982,9 +2982,9 @@ display:none;
 
     min-height:auto;
 
-    padding-top:70px;
+    padding-top:40px;
 
-    padding-bottom:120px;
+    padding-bottom:80px;
 
 }
 
@@ -2996,6 +2996,25 @@ line-height:1.1;
 
 }
 
+   .home-hero-container{
+
+    padding-top:40px;
+
+    padding-bottom:0;
+
+}
+
+   .home-hero-content{
+
+    max-width:100%;
+
+    text-align:center;
+
+    margin:0 auto 45px;
+
+}
+
+   
 .hero-description{
 
 font-size:1rem;
@@ -3020,10 +3039,13 @@ justify-content:center;
 
 .hero-trust{
 
-flex-direction:column;
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-top:25px;
 
 }
-
 .hero-trust-item{
 
 width:100%;
