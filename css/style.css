@@ -2525,11 +2525,26 @@ transform:translateX(4px);
     z-index:-2;
 }
 
-.home-hero-background img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
+.home-hero-image{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.home-hero-image img{
+
+    max-height:580px;
+
+    width:auto;
+
+    max-width:100%;
+
+    object-fit:contain;
+
 }
 
 .home-hero-overlay{
