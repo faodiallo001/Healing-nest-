@@ -2970,7 +2970,7 @@ max-width:430px;
 
 .hero-scroll-indicator{
 
-display:none;
+    display:flex;
 
 }
 
