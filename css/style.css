@@ -2511,7 +2511,7 @@ transform:translateX(4px);
 
 .home-hero{
     position:relative;
-    min-height:55vh;
+    min-height:600px;
     display:flex;
     align-items:center;
     overflow:hidden;
@@ -2546,14 +2546,17 @@ transform:translateX(4px);
 }
 
 .home-hero-container{
-    position:relative;
-    z-index:5;
+
+    padding-top:60px;
+
+    padding-bottom:60px;
+
 }
 
 .home-hero-content{
     max-width:440px;
-    padding-top:50px;
-    padding-bottom:25px;
+    padding-top:0;
+    padding-bottom:0;
 }
 
 .hero-eyebrow{
