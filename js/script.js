@@ -296,3 +296,62 @@ function initializeRevealAnimations() {
     observer.observe(element);
   });
 }
+
+/* ==========================================
+   TESTIMONIAL SLIDER
+========================================== */
+
+const testimonialSlides = document.querySelectorAll(".testimonial-slide");
+const testimonialDots = document.querySelectorAll(".testimonial-dot");
+
+let testimonialIndex = 0;
+let testimonialInterval;
+
+function showTestimonial(index){
+
+    testimonialSlides.forEach(slide =>
+        slide.classList.remove("active")
+    );
+
+    testimonialDots.forEach(dot =>
+        dot.classList.remove("active")
+    );
+
+    testimonialSlides[index].classList.add("active");
+    testimonialDots[index].classList.add("active");
+
+    testimonialIndex = index;
+
+}
+
+function nextTestimonial(){
+
+    testimonialIndex++;
+
+    if(testimonialIndex >= testimonialSlides.length){
+
+        testimonialIndex = 0;
+
+    }
+
+    showTestimonial(testimonialIndex);
+
+}
+
+testimonialInterval = setInterval(nextTestimonial, 5000);
+
+testimonialDots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        clearInterval(testimonialInterval);
+
+        showTestimonial(index);
+
+        testimonialInterval = setInterval(nextTestimonial,5000);
+
+    });
+
+});
+
+showTestimonial(0);
