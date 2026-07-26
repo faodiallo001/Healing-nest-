@@ -2513,7 +2513,7 @@ transform:translateX(4px);
 
     position:relative;
 
-    height:680px;
+    height:760px;
 
     display:flex;
 
@@ -2541,7 +2541,7 @@ transform:translateX(4px);
 
     object-fit:cover;
 
-    display:block;
+    object-position:center center;
 
 }
 
@@ -2589,7 +2589,7 @@ transform:translateX(4px);
 }
 
 .home-hero-content{
-    max-width:440px;
+    max-width:560px;
     padding-top:0;
     padding-bottom:0;
 }
