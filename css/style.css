@@ -3444,6 +3444,12 @@ CONTENT
     margin-bottom:28px;
 }
 
+.founder-content h2{
+
+    color:var(--color-accent);
+
+}
+
 .section-intro{
     font-size:1.1rem;
     line-height:1.9;
@@ -3921,6 +3927,12 @@ min-width:58px;
     max-width:700px;
 
     margin:18px auto 22px;
+
+}
+
+.section-header h2{
+
+    color:var(--color-accent);
 
 }
 
