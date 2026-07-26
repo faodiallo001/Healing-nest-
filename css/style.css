@@ -3412,6 +3412,52 @@ FEATURES GRID
 
 }
 
+.founder-feature{
+
+    background:transparent;
+
+    border:none;
+
+    border-right:1px solid rgba(18,63,51,.08);
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    padding:42px 32px;
+
+    transition:.35s;
+
+}
+
+.founder-feature:last-child{
+
+    border-right:none;
+
+}
+
+.founder-feature:hover{
+
+    background:#fafaf7;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+.founder-feature-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:22px;
+
+    margin-bottom:22px;
+
+}
+
 /* =========================================================
    FOUNDER FEATURES
 ========================================================= */
