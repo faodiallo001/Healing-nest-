@@ -3823,15 +3823,31 @@ min-width:58px;
 
     text-align:center;
 
-    margin-bottom:70px;
+    max-width:760px;
+
+    margin:0 auto 70px;
 
 }
 
 .section-header h2{
 
-    max-width:720px;
+    max-width:700px;
 
-    margin:auto;
+    margin:18px auto 22px;
+
+}
+
+.section-description{
+
+    max-width:620px;
+
+    margin:0 auto;
+
+    color:var(--color-muted);
+
+    font-size:1.05rem;
+
+    line-height:1.8;
 
 }
 
