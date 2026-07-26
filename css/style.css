@@ -4180,9 +4180,12 @@ margin-bottom:24px;
 
     padding:120px 0;
 
-    background:
-    linear-gradient(rgba(10,53,42,.90),rgba(10,53,42,.90)),
-    url("../images/leaves-bg.jpg");
+   background:
+linear-gradient(
+rgba(15,75,58,.93),
+rgba(11,61,49,.93)
+),
+url("../images/leaves-bg.jpg");
 
     background-size:cover;
 
