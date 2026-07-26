@@ -2513,7 +2513,12 @@ transform:translateX(4px);
     position:relative;
     min-height:460px;
     display:flex;
-    align-items:center;
+   align-items:flex-start;
+   padding-top:60px;
+
+    padding-bottom:60px;
+
+    min-height:auto;
     overflow:hidden;
     isolation:isolate;
     background:var(--color-primary-dark);
