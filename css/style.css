@@ -2511,7 +2511,7 @@ transform:translateX(4px);
 
 .home-hero{
     position:relative;
-    min-height:75vh;
+    min-height:55vh;
     display:flex;
     align-items:center;
     overflow:hidden;
@@ -2551,9 +2551,9 @@ transform:translateX(4px);
 }
 
 .home-hero-content{
-    max-width:640px;
-    padding-top:80px;
-    padding-bottom:50px;
+    max-width:440px;
+    padding-top:50px;
+    padding-bottom:25px;
 }
 
 .hero-eyebrow{
