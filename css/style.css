@@ -4168,3 +4168,462 @@ margin-bottom:24px;
 }
 
 }
+
+
+/* =========================================================
+   OUR MISSION
+========================================================= */
+
+.mission-section{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:
+    linear-gradient(rgba(10,53,42,.90),rgba(10,53,42,.90)),
+    url("../images/leaves-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    overflow:hidden;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr 1.1fr;
+
+    gap:45px;
+
+    align-items:center;
+
+}
+
+/* ===========================
+LEFT
+=========================== */
+
+.mission-content{
+
+    color:#fff;
+
+}
+
+.mission-content .section-eyebrow{
+
+    color:#d4b16a;
+
+    margin-bottom:18px;
+
+}
+
+.mission-content h2{
+
+    color:#fff;
+
+    margin-bottom:28px;
+
+    max-width:520px;
+
+}
+
+.mission-content p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+.mission-content .btn-outline{
+
+    margin-top:18px;
+
+    border:1px solid #d4b16a;
+
+    color:#d4b16a;
+
+    background:transparent;
+
+}
+
+.mission-content .btn-outline:hover{
+
+    background:#d4b16a;
+
+    color:#0a352a;
+
+}
+
+/* ===========================
+CENTER CARD
+=========================== */
+
+.method-card{
+
+    position:relative;
+
+    padding:40px;
+
+    border-radius:26px;
+
+    background:rgba(8,45,36,.65);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.method-card h3{
+
+    color:#d4b16a;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.method-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.method-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    margin-bottom:28px;
+
+}
+
+.method-icon{
+
+    width:52px;
+
+    height:52px;
+
+    flex-shrink:0;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.08);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.method-icon img{
+
+    width:28px;
+
+    height:28px;
+
+    object-fit:contain;
+
+}
+
+.method-list strong{
+
+    display:block;
+
+    color:#d4b16a;
+
+    margin-bottom:6px;
+
+    letter-spacing:.06em;
+
+}
+
+.method-list p{
+
+    color:rgba(255,255,255,.80);
+
+    margin:0;
+
+    line-height:1.7;
+
+}
+
+.method-logo{
+
+    width:120px;
+
+    position:absolute;
+
+    right:25px;
+
+    bottom:20px;
+
+    opacity:.25;
+
+}
+
+/* ===========================
+RIGHT TESTIMONIAL
+=========================== */
+
+.testimonial-card{
+
+    color:#fff;
+
+}
+
+.testimonial-card .section-eyebrow{
+
+    color:#d4b16a;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-card blockquote{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    line-height:1.5;
+
+    color:#fff;
+
+    margin:0 0 30px;
+
+}
+
+.stars{
+
+    color:#d4b16a;
+
+    font-size:1.4rem;
+
+    letter-spacing:6px;
+
+    margin-bottom:24px;
+
+}
+
+.testimonial-author{
+
+    color:rgba(255,255,255,.82);
+
+    margin-bottom:35px;
+
+}
+
+.testimonial-dots{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.testimonial-dots span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.35);
+
+    transition:.3s;
+
+}
+
+.testimonial-dots .active{
+
+    width:34px;
+
+    border-radius:20px;
+
+    background:#d4b16a;
+
+}
+
+/* ===========================
+HOVER
+=========================== */
+
+.method-card{
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+
+}
+
+.method-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.28);
+
+}
+
+.method-icon{
+
+    transition:transform .35s ease;
+
+}
+
+.method-list li:hover .method-icon{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.mission-grid{
+
+    grid-template-columns:1fr;
+
+    gap:55px;
+
+}
+
+.mission-content,
+.method-card,
+.testimonial-card{
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+.mission-content{
+
+    text-align:center;
+
+}
+
+.mission-content h2{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.mission-section{
+
+    padding:90px 0;
+
+}
+
+.method-card{
+
+    padding:30px;
+
+}
+
+.method-logo{
+
+    width:90px;
+
+}
+
+.testimonial-card{
+
+    text-align:center;
+
+}
+
+.testimonial-dots{
+
+    justify-content:center;
+
+}
+
+.testimonial-card blockquote{
+
+    font-size:1.55rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.mission-section{
+
+    padding:70px 0;
+
+}
+
+.method-card{
+
+    padding:24px;
+
+}
+
+.method-list li{
+
+    gap:14px;
+
+}
+
+.method-icon{
+
+    width:46px;
+
+    height:46px;
+
+}
+
+.method-icon img{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.testimonial-card blockquote{
+
+    font-size:1.3rem;
+
+    line-height:1.7;
+
+}
+
+.stars{
+
+    font-size:1.2rem;
+
+}
+
+}
